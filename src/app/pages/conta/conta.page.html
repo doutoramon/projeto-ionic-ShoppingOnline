@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item color="primary">
+    <ion-label>
+      Olá Cliente!
+    </ion-label>
+  </ion-item>
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.link" detail>
+      <ion-label>{{c.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
